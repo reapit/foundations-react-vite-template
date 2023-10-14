@@ -1,0 +1,521 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrivateRouteWrapper should match a snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="el-snack-holder"
+      />
+      <main
+        class="el-main-container"
+      >
+        <nav
+          class="el-nav-container"
+        >
+          <a
+            class="el-nav-item-active el-nav-item"
+          >
+            <span
+              class="el-nav-item-icon el-icon"
+              style="font-size: 2.5rem;"
+            >
+              <svg
+                fill="none"
+                height="1em"
+                viewBox="0 0 40 40"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 16.8 20 0l17 16.8V40H3V16.8Z"
+                  fill="#31448F"
+                />
+                <path
+                  d="M3 16.8 20 0l17 16.8V30L3 16.8Z"
+                  fill="#7BC9EB"
+                />
+                <path
+                  d="M37 40h-9.951L12.95 6.966 20 0l17 16.8V40Z"
+                  fill="#0061A8"
+                />
+                <path
+                  d="M37 16.8V30l-17-6.517-7.049-16.517L20 0l17 16.8Z"
+                  fill="var(--nav-menu-icon-secondary-accent)"
+                />
+              </svg>
+            </span>
+            <span
+              class="el-intent-neutral el-ml-auto el-mr2 el-nav-item-hide-desktop el-icon"
+              style="font-size: 2rem;"
+            >
+              <svg
+                fill="none"
+                height="1em"
+                viewBox="0 0 40 40"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  clip-path="url(#hamburgerMenu_svg__a)"
+                >
+                  <rect
+                    fill="var(--nav-menu-icon-secondary-accent)"
+                    height="40"
+                    rx="4"
+                    width="40"
+                  />
+                  <path
+                    d="M11 14.5a1.5 1.5 0 0 1 1.5-1.5h15a1.5 1.5 0 0 1 0 3h-15a1.5 1.5 0 0 1-1.5-1.5ZM11 20.5a1.5 1.5 0 0 1 1.5-1.5h15a1.5 1.5 0 0 1 0 3h-15a1.5 1.5 0 0 1-1.5-1.5ZM12.5 25a1.5 1.5 0 0 0 0 3h15a1.5 1.5 0 0 0 0-3h-15Z"
+                    fill="var(--nav-menu-icon-primary-accent)"
+                  />
+                </g>
+                <defs>
+                  <clippath
+                    id="hamburgerMenu_svg__a"
+                  >
+                    <path
+                      d="M0 0h40v40H0z"
+                      fill="var(--nav-menu-icon-primary-accent)"
+                    />
+                  </clippath>
+                </defs>
+              </svg>
+            </span>
+          </a>
+          <a
+            class="el-nav-item"
+          >
+            <span
+              class="el-nav-item-icon el-icon-size-medium el-icon"
+            >
+              <svg
+                fill="none"
+                height="1em"
+                viewBox="0 0 40 40"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M35 23.392v1.563c0 .232-.17.501-.382.596-.82.365-3.059 1.112-7.632 1.112-.219 0-.428-.003-.636-.007a6.975 6.975 0 0 0-6.034-6.488 4.573 4.573 0 0 1 2.716-1.323.38.38 0 0 1 .228.063 6.332 6.332 0 0 0 7.452 0 .38.38 0 0 1 .228-.063c2.276.26 4.06 2.204 4.06 4.547ZM26.986 9a4.743 4.743 0 1 0 0 9.486 4.743 4.743 0 0 0 0-9.486Z"
+                  fill="var(--nav-menu-icon-secondary-accent)"
+                />
+                <path
+                  d="M15.069 20.918a5.959 5.959 0 1 0 0-11.918 5.959 5.959 0 0 0 0 11.918Zm10.068 6.164v1.964c0 .291-.214.63-.48.748-1.031.459-3.843 1.398-9.588 1.398-5.746 0-8.558-.94-9.589-1.398-.266-.118-.48-.457-.48-.747v-1.965c0-2.943 2.241-5.385 5.1-5.712a.477.477 0 0 1 .287.078 7.956 7.956 0 0 0 4.681 1.525c1.749 0 3.363-.57 4.682-1.524.07-.052.2-.09.286-.08 2.86.328 5.101 2.77 5.101 5.713Z"
+                  fill="var(--nav-menu-icon-primary-accent)"
+                />
+              </svg>
+            </span>
+            Contacts
+          </a>
+          <div
+            class="el-nav-sub-container"
+          >
+            <a
+              class="el-nav-sub-item"
+            >
+              <span>
+                List
+              </span>
+            </a>
+            <a
+              class="el-nav-sub-item"
+            >
+              <span>
+                New
+              </span>
+            </a>
+          </div>
+          <a
+            class="el-nav-item"
+          >
+            <span
+              class="el-nav-item-icon el-icon-size-medium el-icon"
+            >
+              <svg
+                fill="none"
+                height="1em"
+                viewBox="0 0 40 40"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.5 5H9.9A2.904 2.904 0 0 0 7 7.9v23.2C7 32.699 8.301 34 9.9 34h11.6c1.599 0 2.9-1.301 2.9-2.9V7.9c0-1.599-1.301-2.9-2.9-2.9Z"
+                  fill="#fff"
+                />
+                <path
+                  d="M13.042 8.867a.725.725 0 1 0 0-1.45.725.725 0 0 0 0 1.45ZM15.458 7.417h2.9a.725.725 0 1 1 0 1.45h-2.9a.725.725 0 1 1 0-1.45ZM17.15 30.133a1.45 1.45 0 1 1-2.9 0 1.45 1.45 0 0 1 2.9 0ZM26.688 14.014c1.491 0 2.73 1.096 2.953 2.525 1.429.224 2.559 1.462 2.559 2.953 0 1.648-1.374 2.988-3.022 2.988H18.221c-1.647 0-3.021-1.34-3.021-2.988 0-1.478 1.112-2.709 2.524-2.947v-.041a3.989 3.989 0 0 1 3.984-3.985c1.422 0 2.702.744 3.413 1.94a2.967 2.967 0 0 1 1.567-.445Z"
+                  fill="var(--nav-menu-icon-secondary-accent)"
+                />
+              </svg>
+            </span>
+            Apps
+          </a>
+          <a
+            class="el-nav-item-secondary el-nav-item"
+          >
+            <span
+              class="el-nav-item-icon el-icon-size-medium el-icon"
+            >
+              <svg
+                fill="none"
+                height="1em"
+                viewBox="0 0 40 40"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.938 21.946h14.635a1.446 1.446 0 0 0 0-2.892H8.938l1.87-1.87a1.446 1.446 0 1 0-2.046-2.046l-4.338 4.339a1.442 1.442 0 0 0-.095.105l-.021.028a1.367 1.367 0 0 0-.064.086l-.016.026c-.02.031-.04.063-.057.095l-.01.02a1.45 1.45 0 0 0-.05.108l-.006.014c-.015.04-.03.079-.042.12l-.004.015c-.012.04-.022.08-.03.121-.003.012-.004.025-.006.038a1.35 1.35 0 0 0-.016.391c.004.036.01.07.016.105l.005.036c.009.041.02.082.031.122l.004.014c.012.041.027.08.043.12l.005.013c.015.038.033.074.051.11l.01.018c.017.033.036.065.057.096l.015.026c.02.03.042.058.064.086l.02.028c.03.036.062.071.096.105l4.338 4.338c.283.283.653.424 1.023.424a1.446 1.446 0 0 0 1.023-2.469l-1.87-1.87Z"
+                  fill="var(--nav-menu-icon-secondary-accent)"
+                />
+                <path
+                  d="M23.015 8c-4.273 0-7.651 2.273-9.497 5.535-.482.7-.613 1.724-.094 2.483.865 1.262 2.474 1.12 2.87 1.12h5.573c3.62 0 4.769 1.681 4.769 3.362s-1.148 3.362-4.77 3.362h-5.572c-.983 0-1.722.56-2.296 1.12-.574.56-.812 1.768-.463 2.508 1.26 2.669 5.22 5.51 9.48 5.51 7.06 0 12.803-5.608 12.803-12.5 0-6.893-5.743-12.5-12.803-12.5Z"
+                  fill="var(--nav-menu-icon-primary-accent)"
+                />
+              </svg>
+            </span>
+            Logout
+          </a>
+        </nav>
+        <div />
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="el-snack-holder"
+    />
+    <main
+      class="el-main-container"
+    >
+      <nav
+        class="el-nav-container"
+      >
+        <a
+          class="el-nav-item-active el-nav-item"
+        >
+          <span
+            class="el-nav-item-icon el-icon"
+            style="font-size: 2.5rem;"
+          >
+            <svg
+              fill="none"
+              height="1em"
+              viewBox="0 0 40 40"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 16.8 20 0l17 16.8V40H3V16.8Z"
+                fill="#31448F"
+              />
+              <path
+                d="M3 16.8 20 0l17 16.8V30L3 16.8Z"
+                fill="#7BC9EB"
+              />
+              <path
+                d="M37 40h-9.951L12.95 6.966 20 0l17 16.8V40Z"
+                fill="#0061A8"
+              />
+              <path
+                d="M37 16.8V30l-17-6.517-7.049-16.517L20 0l17 16.8Z"
+                fill="var(--nav-menu-icon-secondary-accent)"
+              />
+            </svg>
+          </span>
+          <span
+            class="el-intent-neutral el-ml-auto el-mr2 el-nav-item-hide-desktop el-icon"
+            style="font-size: 2rem;"
+          >
+            <svg
+              fill="none"
+              height="1em"
+              viewBox="0 0 40 40"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                clip-path="url(#hamburgerMenu_svg__a)"
+              >
+                <rect
+                  fill="var(--nav-menu-icon-secondary-accent)"
+                  height="40"
+                  rx="4"
+                  width="40"
+                />
+                <path
+                  d="M11 14.5a1.5 1.5 0 0 1 1.5-1.5h15a1.5 1.5 0 0 1 0 3h-15a1.5 1.5 0 0 1-1.5-1.5ZM11 20.5a1.5 1.5 0 0 1 1.5-1.5h15a1.5 1.5 0 0 1 0 3h-15a1.5 1.5 0 0 1-1.5-1.5ZM12.5 25a1.5 1.5 0 0 0 0 3h15a1.5 1.5 0 0 0 0-3h-15Z"
+                  fill="var(--nav-menu-icon-primary-accent)"
+                />
+              </g>
+              <defs>
+                <clippath
+                  id="hamburgerMenu_svg__a"
+                >
+                  <path
+                    d="M0 0h40v40H0z"
+                    fill="var(--nav-menu-icon-primary-accent)"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+          </span>
+        </a>
+        <a
+          class="el-nav-item"
+        >
+          <span
+            class="el-nav-item-icon el-icon-size-medium el-icon"
+          >
+            <svg
+              fill="none"
+              height="1em"
+              viewBox="0 0 40 40"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M35 23.392v1.563c0 .232-.17.501-.382.596-.82.365-3.059 1.112-7.632 1.112-.219 0-.428-.003-.636-.007a6.975 6.975 0 0 0-6.034-6.488 4.573 4.573 0 0 1 2.716-1.323.38.38 0 0 1 .228.063 6.332 6.332 0 0 0 7.452 0 .38.38 0 0 1 .228-.063c2.276.26 4.06 2.204 4.06 4.547ZM26.986 9a4.743 4.743 0 1 0 0 9.486 4.743 4.743 0 0 0 0-9.486Z"
+                fill="var(--nav-menu-icon-secondary-accent)"
+              />
+              <path
+                d="M15.069 20.918a5.959 5.959 0 1 0 0-11.918 5.959 5.959 0 0 0 0 11.918Zm10.068 6.164v1.964c0 .291-.214.63-.48.748-1.031.459-3.843 1.398-9.588 1.398-5.746 0-8.558-.94-9.589-1.398-.266-.118-.48-.457-.48-.747v-1.965c0-2.943 2.241-5.385 5.1-5.712a.477.477 0 0 1 .287.078 7.956 7.956 0 0 0 4.681 1.525c1.749 0 3.363-.57 4.682-1.524.07-.052.2-.09.286-.08 2.86.328 5.101 2.77 5.101 5.713Z"
+                fill="var(--nav-menu-icon-primary-accent)"
+              />
+            </svg>
+          </span>
+          Contacts
+        </a>
+        <div
+          class="el-nav-sub-container"
+        >
+          <a
+            class="el-nav-sub-item"
+          >
+            <span>
+              List
+            </span>
+          </a>
+          <a
+            class="el-nav-sub-item"
+          >
+            <span>
+              New
+            </span>
+          </a>
+        </div>
+        <a
+          class="el-nav-item"
+        >
+          <span
+            class="el-nav-item-icon el-icon-size-medium el-icon"
+          >
+            <svg
+              fill="none"
+              height="1em"
+              viewBox="0 0 40 40"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.5 5H9.9A2.904 2.904 0 0 0 7 7.9v23.2C7 32.699 8.301 34 9.9 34h11.6c1.599 0 2.9-1.301 2.9-2.9V7.9c0-1.599-1.301-2.9-2.9-2.9Z"
+                fill="#fff"
+              />
+              <path
+                d="M13.042 8.867a.725.725 0 1 0 0-1.45.725.725 0 0 0 0 1.45ZM15.458 7.417h2.9a.725.725 0 1 1 0 1.45h-2.9a.725.725 0 1 1 0-1.45ZM17.15 30.133a1.45 1.45 0 1 1-2.9 0 1.45 1.45 0 0 1 2.9 0ZM26.688 14.014c1.491 0 2.73 1.096 2.953 2.525 1.429.224 2.559 1.462 2.559 2.953 0 1.648-1.374 2.988-3.022 2.988H18.221c-1.647 0-3.021-1.34-3.021-2.988 0-1.478 1.112-2.709 2.524-2.947v-.041a3.989 3.989 0 0 1 3.984-3.985c1.422 0 2.702.744 3.413 1.94a2.967 2.967 0 0 1 1.567-.445Z"
+                fill="var(--nav-menu-icon-secondary-accent)"
+              />
+            </svg>
+          </span>
+          Apps
+        </a>
+        <a
+          class="el-nav-item-secondary el-nav-item"
+        >
+          <span
+            class="el-nav-item-icon el-icon-size-medium el-icon"
+          >
+            <svg
+              fill="none"
+              height="1em"
+              viewBox="0 0 40 40"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.938 21.946h14.635a1.446 1.446 0 0 0 0-2.892H8.938l1.87-1.87a1.446 1.446 0 1 0-2.046-2.046l-4.338 4.339a1.442 1.442 0 0 0-.095.105l-.021.028a1.367 1.367 0 0 0-.064.086l-.016.026c-.02.031-.04.063-.057.095l-.01.02a1.45 1.45 0 0 0-.05.108l-.006.014c-.015.04-.03.079-.042.12l-.004.015c-.012.04-.022.08-.03.121-.003.012-.004.025-.006.038a1.35 1.35 0 0 0-.016.391c.004.036.01.07.016.105l.005.036c.009.041.02.082.031.122l.004.014c.012.041.027.08.043.12l.005.013c.015.038.033.074.051.11l.01.018c.017.033.036.065.057.096l.015.026c.02.03.042.058.064.086l.02.028c.03.036.062.071.096.105l4.338 4.338c.283.283.653.424 1.023.424a1.446 1.446 0 0 0 1.023-2.469l-1.87-1.87Z"
+                fill="var(--nav-menu-icon-secondary-accent)"
+              />
+              <path
+                d="M23.015 8c-4.273 0-7.651 2.273-9.497 5.535-.482.7-.613 1.724-.094 2.483.865 1.262 2.474 1.12 2.87 1.12h5.573c3.62 0 4.769 1.681 4.769 3.362s-1.148 3.362-4.77 3.362h-5.572c-.983 0-1.722.56-2.296 1.12-.574.56-.812 1.768-.463 2.508 1.26 2.669 5.22 5.51 9.48 5.51 7.06 0 12.803-5.608 12.803-12.5 0-6.893-5.743-12.5-12.803-12.5Z"
+                fill="var(--nav-menu-icon-primary-accent)"
+              />
+            </svg>
+          </span>
+          Logout
+        </a>
+      </nav>
+      <div />
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`PrivateRouteWrapper should match a snapshot where there is no session 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="el-snack-holder"
+      />
+      <main
+        class="el-main-container"
+      >
+        <section
+          class="el-page-container"
+        >
+          <div
+            class="el-is-full-page el-loader-container"
+          >
+            <div
+              class="el-loader"
+            >
+              <div
+                class="el-loader-moving-bar"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="el-snack-holder"
+    />
+    <main
+      class="el-main-container"
+    >
+      <section
+        class="el-page-container"
+      >
+        <div
+          class="el-is-full-page el-loader-container"
+        >
+          <div
+            class="el-loader"
+          >
+            <div
+              class="el-loader-moving-bar"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

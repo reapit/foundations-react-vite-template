@@ -1,6 +1,5 @@
 import { PropsWithChildren } from 'react'
 import { renderHook } from '@testing-library/react-hooks'
-import { ReapitConnectBrowserSession } from '@reapit/connect-session'
 import axios from 'axios'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { PlatformGet, usePlatformGet } from '../use-platform-get'
@@ -10,21 +9,14 @@ jest.mock('axios', () => ({
   get: jest.fn(),
 }))
 
-jest.mock('../../use-connect-session', () => ({
-  useConnectSession: () =>
-    ({
-      connectSession: jest.fn(() => ({
-        accessToken: 'SOME_TOKEN',
-      })),
-    } as unknown as ReapitConnectBrowserSession),
-}))
-
 jest.mock('@reapit/elements', () => ({
   useSnack: jest.fn(() => ({
     success: mockSuccess,
     error: mockError,
   })),
 }))
+
+jest.mock('../../core/connect-session')
 
 const mockData = {
   someData: {
@@ -35,7 +27,7 @@ const mockSuccess = jest.fn()
 const mockError = jest.fn()
 const mockAxios = axios.get as unknown as jest.Mock
 
-import.meta.env.VITE_PLATFORM_API_URL = 'https://platform.reapit.cloud'
+process.env.PLATFORM_API_URL = 'https://platform.reapit.cloud'
 
 const createWrapper = () => {
   const queryClient = new QueryClient()
@@ -79,7 +71,7 @@ describe('usePlatformGet', () => {
 
     expect(mockAxios).toHaveBeenCalledWith('https://platform.reapit.cloud/foo/bar?baz=bat', {
       headers: {
-        Authorization: 'Bearer SOME_TOKEN',
+        Authorization: 'Bearer MOCK_ACCESS_TOKEN',
         'Content-Type': 'application/json',
         'api-version': 'latest',
         foo: 'bar',

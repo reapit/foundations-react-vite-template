@@ -4,6 +4,7 @@ import svgrPlugin from 'vite-plugin-svgr'
 import linaria from '@linaria/vite'
 import checker from 'vite-plugin-checker'
 import { VitePWA } from 'vite-plugin-pwa'
+import EnvironmentPlugin from 'vite-plugin-environment'
 
 const customLogger = createLogger()
 const loggerWarn = customLogger.warn
@@ -60,6 +61,13 @@ export default defineConfig(({ mode }) => ({
         ],
       },
     }),
+    EnvironmentPlugin([
+      'APP_ENV',
+      'CONNECT_CLIENT_ID',
+      'CONNECT_USER_POOL_ID',
+      'CONNECT_OAUTH_URL',
+      'PLATFORM_API_URL',
+    ]),
   ],
   build: {
     outDir: 'build',

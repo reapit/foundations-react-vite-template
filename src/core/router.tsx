@@ -2,8 +2,8 @@ import { FC } from 'react'
 import { Route, BrowserRouter, Routes, Navigate } from 'react-router-dom'
 import { Routes as RoutePaths } from '../constants/routes'
 import PrivateRouteWrapper from './private-route-wrapper'
-import { LoginModule } from '../modules/login'
-import { ContactsModule } from '../modules/contacts'
+import { LoginModule } from '../components/login'
+import { ContactsModule } from '../components/contacts'
 
 export const RoutesComponent: FC = () => (
   <>

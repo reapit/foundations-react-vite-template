@@ -1,11 +1,11 @@
-import { FC, Suspense } from 'react'
+import { FC, PropsWithChildren, Suspense } from 'react'
 import { useReapitConnect } from '@reapit/connect-session'
 import { Nav } from './nav'
 import { reapitConnectBrowserSession } from './connect-session'
 import { useLocation, redirect } from 'react-router'
 import { Loader, MainContainer, PageContainer } from '@reapit/elements'
 
-export const PrivateRouteWrapper: FC = ({ children }) => {
+export const PrivateRouteWrapper: FC<PropsWithChildren> = ({ children }) => {
   const { connectSession, connectInternalRedirect } = useReapitConnect(reapitConnectBrowserSession)
   const location = useLocation()
 

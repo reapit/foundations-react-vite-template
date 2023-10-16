@@ -5,7 +5,9 @@ import { render } from '../../scripts/tests'
 jest.mock('@reapit/connect-session', () => ({
   useReapitConnect: () => ({
     connectSession: {
-      loginIdentity: {},
+      loginIdentity: {
+        name: 'MOCK_NAME',
+      },
     },
   }),
 }))

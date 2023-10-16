@@ -1,16 +1,16 @@
 import { PersistentNotification } from '@reapit/elements'
-import { Component, ErrorInfo } from 'react'
+import { Component, ErrorInfo, PropsWithChildren } from 'react'
 
 export interface ErrorState {
   hasFailed: boolean
 }
 
-export class ErrorBoundary<T> extends Component<T> {
+export class ErrorBoundary<T> extends Component<T & PropsWithChildren> {
   state = {
     hasFailed: false,
   }
 
-  constructor(props: T) {
+  constructor(props: T & PropsWithChildren) {
     super(props)
   }
 

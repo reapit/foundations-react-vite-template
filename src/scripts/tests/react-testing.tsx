@@ -1,7 +1,7 @@
 /** See: https://testing-library.com/docs/react-testing-library/setup#custom-render
  * Renders a React Component with  UI providers as a testing convenience
  */
-import { FC, ReactElement } from 'react'
+import { FC, PropsWithChildren, ReactElement } from 'react'
 import { render, RenderOptions } from '@testing-library/react'
 import { MemoryRouter, Route, Routes } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
@@ -9,7 +9,7 @@ import { MediaStateProvider, NavStateProvider, SnackProvider } from '@reapit/ele
 
 const queryClient = new QueryClient()
 
-const CombinedProvider: FC = ({ children }) => {
+export const CombinedProvider: FC<PropsWithChildren> = ({ children }) => {
   return (
     <QueryClientProvider client={queryClient}>
       <SnackProvider>

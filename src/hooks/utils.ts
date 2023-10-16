@@ -85,7 +85,7 @@ export const objectToQuery = <QueryObjectType extends {}>(queryObject: QueryObje
   }, {} as StringMap)
 
 export const getUrl = (path: string, queryParams?: Object) => (): string => {
-  const api = import.meta.env.VITE_PLATFORM_API_URL
+  const api = process.env.PLATFORM_API_URL
   const normalisedQuery = objectToQuery(queryParams ?? {})
   const query = qs.stringify(normalisedQuery, { encode: false })
   const url = `${api}${path}${query ? `?${query}` : ''}`

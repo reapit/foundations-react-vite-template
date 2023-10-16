@@ -1,41 +1,44 @@
 import '@testing-library/jest-dom'
 import fetchMock from 'jest-fetch-mock'
 import 'jest-location-mock'
-import { Config } from '../../types/global'
 import MockDate from 'mockdate'
 
 MockDate.set(new Date('2023-01-01'))
 
-Object.defineProperty(import.meta, 'env', {
+Object.defineProperty(process, 'env', {
   value: {
-    VITE_CONNECT_CLIENT_ID: 'MOCK_ID',
-  } as Config,
+    CONNECT_CLIENT_ID: 'MOCK_ID',
+    CONNECT_OAUTH_URL: 'MOCK_ID',
+    CONNECT_USER_POOL_ID: 'MOCK_ID',
+    PLATFORM_API_URL: 'MOCK_ID',
+    NODE_ENV: 'test',
+  },
 })
 
-// jest.mock('@linaria/react', () => {
-//   const styled = (tag: any) => {
-//     return jest.fn(() => `mock-styled.${tag}`)
-//   }
-//   return {
-//     styled: new Proxy(styled, {
-//       get(o, prop) {
-//         return o(prop)
-//       },
-//     }),
-//   }
-// })
+jest.mock('@linaria/react', () => {
+  const styled = (tag: any) => {
+    return jest.fn(() => `mock-styled.${tag}`)
+  }
+  return {
+    styled: new Proxy(styled, {
+      get(o, prop) {
+        return o(prop)
+      },
+    }),
+  }
+})
 
-// jest.mock('@linaria/core', () => {
-//   const css = (tag: any) => {
-//     return `mock-css.${tag}`
-//   }
+jest.mock('@linaria/core', () => {
+  const css = (tag: any) => {
+    return `mock-css.${tag}`
+  }
 
-//   const { cx } = jest.requireActual('@linaria/core')
+  const { cx } = jest.requireActual('@linaria/core')
 
-//   return {
-//     cx,
-//     css,
-//   }
-// })
+  return {
+    cx,
+    css,
+  }
+})
 
 fetchMock.enableMocks()

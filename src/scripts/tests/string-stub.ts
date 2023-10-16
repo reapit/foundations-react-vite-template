@@ -1,3 +1,3 @@
-const cssStub = ''
+export const cssStub = ''
 
 export default cssStub

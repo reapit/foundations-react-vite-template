@@ -1,5 +1,5 @@
-import { CONTACTS_ROUTES } from '../modules/contacts'
-import { LOGIN_ROUTES } from '../modules/login'
+import { CONTACTS_ROUTES } from '../components/contacts'
+import { LOGIN_ROUTES } from '../components/login'
 
 export const Routes = {
   HOME: '/',

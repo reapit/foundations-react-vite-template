@@ -1,18 +1,20 @@
-# React App Scaffolded With Foundations React Vite Template
+# Foundations React Vite Template
+
+This repo is the template for building Reapit Foundations React apps, from v4 of Reapit Elements onwards. It replaces the earlier Create React App template, owing to the React team deciding to deprecate CRA.
+
+It includes the usual Reapit Packages (Connect Session, Elements, TS Defintions), UI and Data fetching examples as well as some battle hardened libraries we use internally for building apps for example React Hook Form, React Query & Zustand.
+
+As always, it should give you everything you need to get started building on the Reapit Foundations platform. For more documentation on our APIs and other resources, please visit our [developer portal](https://developers.reapit.cloud).
 
 ## Getting Started
 
-Each package has the following commands that can be run using yarn:
+First, if you don't have a Reapit Connect client id yet, will need to obtain one [here](https://developers.reapit.cloud/apps/new).
 
-- `yarn start` will start a dev server with typechecking and linting enabled
-- `yarn build` will build an app for production
-- `yarn test` will run the Jest tests in watch mode
-- `yarn lint` will run eslint and prettier accross the project
-- `yarn check` will use tsc to type check the project
+If you are creating a fresh client id or already have one but want to see the full functionality of the template, you will need to add the following scopes to your app `read contacts`, `write contacts`, `read negotiators` & `read offices` - you can always remove these scopes later if you don't need them.
 
-## CI/CD and Releases
+Ensure also you have set `http://localhost:8080` as a redirect uri and `http://localhost:8080/login` as a logout uri in your app settings in the [developer portal](https://developers.reapit.cloud/apps).
 
-### Development & PRs
+The output app will create a simple CRUD contacts app to demonstrate the features of the platform.
 
 Then with `NodeJS ~18` installed, run;
 

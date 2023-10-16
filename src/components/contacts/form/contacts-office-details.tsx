@@ -4,11 +4,11 @@ import {
   Label,
   FormLayout,
   elFadeIn,
-  elMb11,
   InputWrapFull,
   MultiSelectInput,
   InputError,
   MultiSelectOption,
+  elMb3,
 } from '@reapit/elements'
 import { ChangeEvent, Dispatch, FC, SetStateAction, useCallback, useEffect, useState } from 'react'
 import { UseFormGetValues, UseFormReturn } from 'react-hook-form'
@@ -174,14 +174,18 @@ export const ContactsOfficeDetails: FC<ContactsOfficeDetailsProps> = ({ form, co
 
   return (
     <>
-      <div className={elMb11}>
-        <BodyText hasGreyText hasNoMargin>
-          Provide information here relating to your Reapit organisation & office.
-        </BodyText>
-      </div>
+      <BodyText hasBoldText hasSectionMargin>
+        Provide information here relating to your Reapit organisation & office.
+      </BodyText>
       <FormLayout className={elFadeIn}>
         <InputWrapFull>
-          <InputGroup onChange={debouncedSourceSearch} icon="searchSystem" placeholder="Search" label="Source" />
+          <InputGroup
+            className={elMb3}
+            onChange={debouncedSourceSearch}
+            icon="searchSystem"
+            placeholder="Search"
+            label="Source"
+          />
           <MultiSelectInput
             id="source-select"
             {...register('source')}
@@ -191,7 +195,13 @@ export const ContactsOfficeDetails: FC<ContactsOfficeDetailsProps> = ({ form, co
           {errors.source?.message && <InputError message={errors.source.message} />}
         </InputWrapFull>
         <InputWrapFull>
-          <InputGroup onChange={debouncedNegsSearch} icon="searchSystem" placeholder="Search" label="Negotiators" />
+          <InputGroup
+            className={elMb3}
+            onChange={debouncedNegsSearch}
+            icon="searchSystem"
+            placeholder="Search"
+            label="Negotiators"
+          />
           <MultiSelectInput
             id="negotiators-select"
             {...register('negotiatorIds')}
@@ -201,7 +211,13 @@ export const ContactsOfficeDetails: FC<ContactsOfficeDetailsProps> = ({ form, co
           {errors.negotiatorIds?.message && <InputError message={errors.negotiatorIds.message} />}
         </InputWrapFull>
         <InputWrapFull>
-          <InputGroup onChange={debouncedOfficeSearch} icon="searchSystem" placeholder="Search" label="Offices" />
+          <InputGroup
+            className={elMb3}
+            onChange={debouncedOfficeSearch}
+            icon="searchSystem"
+            placeholder="Search"
+            label="Offices"
+          />
           <MultiSelectInput
             id="offices-select"
             {...register('officeIds')}
@@ -212,17 +228,19 @@ export const ContactsOfficeDetails: FC<ContactsOfficeDetailsProps> = ({ form, co
         </InputWrapFull>
         {categories && categories.length && (
           <InputWrapFull>
-            <Label>Categories</Label>
-            <MultiSelectInput
-              id="categories-select"
-              {...register('categoryIds')}
-              options={categories.map(({ value, id }) => ({
-                value: id ?? '',
-                name: value ?? '',
-              }))}
-              defaultValues={categoryIds}
-            />
-            {errors.categoryIds?.message && <InputError message={errors.categoryIds.message} />}
+            <InputGroup>
+              <Label>Categories</Label>
+              <MultiSelectInput
+                id="categories-select"
+                {...register('categoryIds')}
+                options={categories.map(({ value, id }) => ({
+                  value: id ?? '',
+                  name: value ?? '',
+                }))}
+                defaultValues={categoryIds}
+              />
+              {errors.categoryIds?.message && <InputError message={errors.categoryIds.message} />}
+            </InputGroup>
           </InputWrapFull>
         )}
       </FormLayout>

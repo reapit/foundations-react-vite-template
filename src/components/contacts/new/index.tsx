@@ -1,5 +1,16 @@
 import { Dispatch, FC, SetStateAction, useState } from 'react'
-import { Button, ButtonGroup, elMb11, elMl8, StepsVertical, Title, useMediaQuery } from '@reapit/elements'
+import {
+  Button,
+  ButtonGroup,
+  elMb5,
+  elMb8,
+  elMl8,
+  FlexContainer,
+  PageHeader,
+  StepsVertical,
+  Tile,
+  useMediaQuery,
+} from '@reapit/elements'
 import { useForm, UseFormTrigger } from 'react-hook-form'
 import { CreateContactModel } from '@reapit/foundations-ts-definitions'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -13,6 +24,7 @@ import { ContactsAddresses } from '../form/contacts-addresses'
 import { ContactsOfficeDetails } from '../form/contacts-office-details'
 import { UpdateFunction, usePlatformUpdate } from '../../../hooks'
 import { ErrorBoundary } from '../../../utils/error-boundary'
+import { navigateRoute } from '../../../utils/navigate'
 
 export const handleSwitchStep =
   (
@@ -100,58 +112,72 @@ export const ContactsNew: FC = () => {
 
   return (
     <ErrorBoundary>
-      <Title>Contacts New</Title>
-      <form>
-        <StepsVertical
-          steps={[
-            {
-              item: '1',
-              content: <ContactsPersonal form={form} />,
-            },
-            {
-              item: '2',
-              content: <ContactsComsDetails form={form} />,
-            },
-            {
-              item: '3',
-              content: <ContactsAddresses form={form} />,
-            },
-            {
-              item: '4',
-              content: <ContactsOfficeDetails form={form} />,
-            },
-          ]}
-          selectedStep={selectedStep}
-          onStepClick={setSelectedStep}
-        />
-        <ButtonGroup className={cx(elMb11, !isTablet && !isMobile && elMl8)} alignment="left">
-          {selectedStep === '4' ? (
-            <Button
-              intent="critical"
-              onClick={handleSubmit(handleSubmitContact(createContact, navigate))}
-              size={2}
-              chevronRight
-              type="button"
-              disabled={createContactLoading}
-              loading={createContactLoading}
-            >
-              Create
-            </Button>
-          ) : (
-            <Button
-              intent="primary"
-              onClick={handleSwitchStep(nextStep, selectedStep, trigger, setSelectedStep)}
-              size={2}
-              chevronRight
-              type="button"
-              disabled={createContactLoading}
-              loading={createContactLoading}
-            >
-              Next
-            </Button>
-          )}
-        </ButtonGroup>
-      </form>
+      <PageHeader
+        hasMaxWidth
+        pageTitle={{
+          children: 'New Contact',
+          hasBoldText: true,
+        }}
+        buttons={[
+          {
+            children: 'Back To List',
+            intent: 'default',
+            className: elMb5,
+            onClick: navigateRoute(navigate, '/contacts/list'),
+          },
+        ]}
+      />
+      <FlexContainer isFlexColumn hasMaxWidth>
+        <Tile>
+          <form>
+            <StepsVertical
+              steps={[
+                {
+                  item: '1',
+                  content: <ContactsPersonal form={form} />,
+                },
+                {
+                  item: '2',
+                  content: <ContactsComsDetails form={form} />,
+                },
+                {
+                  item: '3',
+                  content: <ContactsAddresses form={form} />,
+                },
+                {
+                  item: '4',
+                  content: <ContactsOfficeDetails form={form} />,
+                },
+              ]}
+              selectedStep={selectedStep}
+              onStepClick={setSelectedStep}
+            />
+            <ButtonGroup className={cx(elMb8, !isTablet && !isMobile && elMl8)} alignment="left">
+              {selectedStep === '4' ? (
+                <Button
+                  intent="primary"
+                  onClick={handleSubmit(handleSubmitContact(createContact, navigate))}
+                  type="button"
+                  disabled={createContactLoading}
+                  loading={createContactLoading}
+                >
+                  Create
+                </Button>
+              ) : (
+                <Button
+                  intent="primary"
+                  onClick={handleSwitchStep(nextStep, selectedStep, trigger, setSelectedStep)}
+                  type="button"
+                  disabled={createContactLoading}
+                  loading={createContactLoading}
+                >
+                  Next
+                </Button>
+              )}
+            </ButtonGroup>
+          </form>
+        </Tile>
+      </FlexContainer>
     </ErrorBoundary>
   )
 }

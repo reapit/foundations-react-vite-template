@@ -1,14 +1,4 @@
-import {
-  BodyText,
-  InputWrap,
-  InputGroup,
-  Label,
-  Select,
-  FormLayout,
-  elFadeIn,
-  elMb11,
-  InputError,
-} from '@reapit/elements'
+import { BodyText, InputWrap, InputGroup, Label, Select, FormLayout, elFadeIn, InputError } from '@reapit/elements'
 import dayjs from 'dayjs'
 import { FC } from 'react'
 import { UseFormReturn } from 'react-hook-form'
@@ -28,11 +18,9 @@ export const ContactsPersonal: FC<ContactPersonalProps> = ({ form }) => {
 
   return (
     <>
-      <div className={elMb11}>
-        <BodyText hasGreyText hasNoMargin>
-          Provide us with some basic personal information about your contact.
-        </BodyText>
-      </div>
+      <BodyText hasBoldText hasSectionMargin>
+        Provide us with some basic personal information about your contact.
+      </BodyText>
       <FormLayout className={elFadeIn}>
         <InputWrap>
           <InputGroup>
@@ -55,8 +43,7 @@ export const ContactsPersonal: FC<ContactPersonalProps> = ({ form }) => {
             label="First Name"
             placeholder="Please enter a first name"
             {...register('forename')}
-            icon={errors?.forename?.message ? 'asteriskSystem' : undefined}
-            intent="danger"
+            hasError={Boolean(errors.forename?.message)}
           />
           {errors.forename?.message && <InputError message={errors.forename.message} />}
         </InputWrap>
@@ -65,8 +52,7 @@ export const ContactsPersonal: FC<ContactPersonalProps> = ({ form }) => {
             label="Surname"
             placeholder="Please enter a surname"
             {...register('surname')}
-            icon={errors?.surname?.message ? 'asteriskSystem' : undefined}
-            intent="danger"
+            hasError={Boolean(errors.surname?.message)}
           />
           {errors.surname?.message && <InputError message={errors.surname.message} />}
         </InputWrap>
@@ -76,8 +62,7 @@ export const ContactsPersonal: FC<ContactPersonalProps> = ({ form }) => {
             type="date"
             {...register('dateOfBirth')}
             max={dayjs().format('YYYY-MM-DD')}
-            icon={errors?.dateOfBirth?.message ? 'asteriskSystem' : undefined}
-            intent="danger"
+            hasError={Boolean(errors.dateOfBirth?.message)}
           />
           {errors.dateOfBirth?.message && <InputError message={errors.dateOfBirth.message} />}
         </InputWrap>

@@ -11,7 +11,7 @@ export const PrivateRouteWrapper: FC<PropsWithChildren> = ({ children }) => {
 
   if (!connectSession) {
     return (
-      <MainContainer>
+      <MainContainer hasGreyBackground>
         <PageContainer>
           <Loader fullPage />
         </PageContainer>
@@ -24,7 +24,7 @@ export const PrivateRouteWrapper: FC<PropsWithChildren> = ({ children }) => {
   }
 
   return (
-    <MainContainer>
+    <MainContainer hasGreyBackground>
       <Nav />
       <Suspense fallback={<Loader fullPage />}>{children}</Suspense>
     </MainContainer>

@@ -6,7 +6,6 @@ import {
   Select,
   FormLayout,
   elFadeIn,
-  elMb11,
   InputError,
   Toggle,
   ElToggleItem,
@@ -32,19 +31,16 @@ export const ContactsComsDetails: FC<ContactsComsDetailsProps> = ({ form }) => {
   } = form
   return (
     <>
-      <div className={elMb11}>
-        <BodyText hasGreyText hasNoMargin>
-          Provide here the communication details and marketing preferences of your contact.
-        </BodyText>
-      </div>
+      <BodyText hasBoldText hasSectionMargin>
+        Provide here the communication details and marketing preferences of your contact.
+      </BodyText>
       <FormLayout className={elFadeIn}>
         <InputWrap>
           <InputGroup
             label="Home Phone"
             placeholder="Please enter a telephone number"
             {...register('homePhone')}
-            icon={errors?.homePhone?.message ? 'asteriskSystem' : undefined}
-            intent="danger"
+            hasError={Boolean(errors.homePhone?.message)}
           />
           {errors.homePhone?.message && <InputError message={errors.homePhone.message} />}
         </InputWrap>
@@ -53,8 +49,7 @@ export const ContactsComsDetails: FC<ContactsComsDetailsProps> = ({ form }) => {
             label="Work Phone"
             placeholder="Please enter a telephone number"
             {...register('workPhone')}
-            icon={errors?.workPhone?.message ? 'asteriskSystem' : undefined}
-            intent="danger"
+            hasError={Boolean(errors.workPhone?.message)}
           />
           {errors.workPhone?.message && <InputError message={errors.workPhone.message} />}
         </InputWrap>
@@ -63,8 +58,7 @@ export const ContactsComsDetails: FC<ContactsComsDetailsProps> = ({ form }) => {
             label="Mobile Phone"
             placeholder="Please enter a telephone number"
             {...register('mobilePhone')}
-            icon={errors?.mobilePhone?.message ? 'asteriskSystem' : undefined}
-            intent="danger"
+            hasError={Boolean(errors.mobilePhone?.message)}
           />
           {errors.mobilePhone?.message && <InputError message={errors.mobilePhone.message} />}
         </InputWrap>
@@ -74,8 +68,7 @@ export const ContactsComsDetails: FC<ContactsComsDetailsProps> = ({ form }) => {
             type="email"
             placeholder="Please enter an email address"
             {...register('email')}
-            icon={errors?.email?.message ? 'asteriskSystem' : undefined}
-            intent="danger"
+            hasError={Boolean(errors.email?.message)}
           />
           {errors.email?.message && <InputError message={errors.email.message} />}
         </InputWrap>

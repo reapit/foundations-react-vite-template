@@ -9,6 +9,7 @@ import { getAvatarInitials } from '../utils/nav'
 
 export const getDefaultNavIndex = (pathname: string) => {
   if (pathname.includes('contacts')) return 1
+  if (pathname.includes('new-module')) return 2
   return 0
 }
 
@@ -25,7 +26,6 @@ export const Nav: FC = () => {
     {
       itemIndex: 1,
       text: 'Contacts',
-      iconId: 'usersMenu',
       callback: navigateRoute(navigate, Routes.CONTACTS_LIST),
       subItems: [
         {
@@ -39,6 +39,11 @@ export const Nav: FC = () => {
           text: 'New',
         },
       ],
+    },
+    {
+      itemIndex: 2,
+      text: 'New Page',
+      callback: navigateRoute(navigate, Routes.NEW_HOME),
     },
   ]
 

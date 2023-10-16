@@ -1,5 +1,14 @@
 import { ChangeEvent, FC, useEffect } from 'react'
-import { Button, ButtonGroup, elMb11, elMb7, Loader, PersistentNotification, Tabs, Title } from '@reapit/elements'
+import {
+  Button,
+  ButtonGroup,
+  elMb7,
+  Loader,
+  PersistentNotification,
+  PageHeader,
+  FlexContainer,
+  Tile,
+} from '@reapit/elements'
 import { useForm, UseFormReset, UseFormTrigger } from 'react-hook-form'
 import { ContactModel, UpdateContactModel } from '@reapit/foundations-ts-definitions'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -15,6 +24,7 @@ import { nonNullableObject } from '../../../utils/object'
 import { UpdateFunction, usePlatformGet, usePlatformUpdate } from '../../../hooks'
 import { combineName } from '../../../utils/combine-name'
 import { ErrorBoundary } from '../../../utils/error-boundary'
+import { navigateRoute } from '../../../utils/navigate'
 
 export interface ContactsEditProps {
   contactId: string
@@ -150,82 +160,102 @@ export const ContactsEdit: FC = () => {
 
   return (
     <ErrorBoundary>
-      <Title>Contact {name !== 'Unknown' && name}</Title>
-      <Tabs
-        isFullWidth
-        name="app-edit-tabs"
-        onChange={handleChangeTab(trigger, navigate, contactId)}
-        options={[
+      <PageHeader
+        hasMaxWidth
+        pageTitle={{
+          children: `Contact ${name !== 'Unknown' ? name : ''}`,
+          hasBoldText: true,
+        }}
+        buttons={[
           {
-            id: 'view',
-            value: 'view',
-            text: 'Overview',
-            isChecked: pathname.includes('view'),
+            children: 'Back To List',
+            intent: 'default',
+            onClick: navigateRoute(navigate, '/contacts/list'),
           },
           {
-            id: 'personal',
-            value: 'personal',
-            text: 'Personal',
-            isChecked: pathname.includes('personal'),
-          },
-          {
-            id: 'communications',
-            value: 'communications',
-            text: 'Communications',
-            isChecked: pathname.includes('communications'),
-          },
-          {
-            id: 'addresses',
-            value: 'addresses',
-            text: 'Addresses',
-            isChecked: pathname.includes('addresses'),
-          },
-          {
-            id: 'office',
-            value: 'office',
-            text: 'Office Details',
-            isChecked: pathname.includes('office'),
+            children: 'New Contact',
+            intent: 'primary',
+            onClick: navigateRoute(navigate, '/contacts/new'),
           },
         ]}
+        tabs={{
+          hasNoBorder: true,
+          name: 'app-edit-tabs',
+          onChange: handleChangeTab(trigger, navigate, contactId),
+          options: [
+            {
+              id: 'view',
+              value: 'view',
+              text: 'Overview',
+              isChecked: pathname.includes('view'),
+            },
+            {
+              id: 'personal',
+              value: 'personal',
+              text: 'Personal',
+              isChecked: pathname.includes('personal'),
+            },
+            {
+              id: 'communications',
+              value: 'communications',
+              text: 'Communications',
+              isChecked: pathname.includes('communications'),
+            },
+            {
+              id: 'addresses',
+              value: 'addresses',
+              text: 'Addresses',
+              isChecked: pathname.includes('addresses'),
+            },
+            {
+              id: 'office',
+              value: 'office',
+              text: 'Office Details',
+              isChecked: pathname.includes('office'),
+            },
+          ],
+        }}
       />
-      {contactLoading && <Loader />}
-      <form className={elMb11}>
-        <div className={elMb11}>
-          <Routes>
-            <Route path="view" element={<ContactsEditView contact={contact} />} />
-            <Route path="personal" element={<ContactsPersonal form={form} />} />
-            <Route path="communications" element={<ContactsComsDetails form={form} />} />
-            <Route path="addresses" element={<ContactsAddresses form={form} />} />
-            <Route path="office" element={<ContactsOfficeDetails form={form} contact={contact} />} />
-          </Routes>
-        </div>
-        {!isValid && !isValidating && !pathname.includes('view') && contact && (
-          <PersistentNotification className={elMb7} isExpanded isFullWidth isInline intent="danger">
-            There are one or more errors in the form that are preventing you from saving the contact. Please check each
-            section to proceeed.
-          </PersistentNotification>
-        )}
-        {!pathname.includes('view') && (
-          <ButtonGroup className={elMb11} alignment="left">
-            <Button
-              intent="critical"
-              onClick={handleSubmit(handleSubmitContact(updateContact, navigate))}
-              size={2}
-              chevronRight
-              type="button"
-              disabled={updateContactLoading || !isValid}
-              loading={updateContactLoading}
-            >
-              Update
-            </Button>
-          </ButtonGroup>
-        )}
-      </form>
-      {!contactLoading && !contact && (
-        <PersistentNotification isExpanded isFullWidth isInline intent="secondary">
-          Contact not found
-        </PersistentNotification>
-      )}
+      <FlexContainer hasMaxWidth isFlexColumn>
+        <Tile>
+          {contactLoading && <Loader />}
+          <form>
+            <div className={elMb7}>
+              <Routes>
+                <Route path="view" element={<ContactsEditView contact={contact} />} />
+                <Route path="personal" element={<ContactsPersonal form={form} />} />
+                <Route path="communications" element={<ContactsComsDetails form={form} />} />
+                <Route path="addresses" element={<ContactsAddresses form={form} />} />
+                <Route path="office" element={<ContactsOfficeDetails form={form} contact={contact} />} />
+              </Routes>
+            </div>
+            {!isValid && !isValidating && !pathname.includes('view') && contact && (
+              <PersistentNotification className={elMb7} isExpanded isFullWidth isInline intent="danger">
+                There are one or more errors in the form that are preventing you from saving the contact. Please check
+                each section to proceeed.
+              </PersistentNotification>
+            )}
+            {!pathname.includes('view') && (
+              <ButtonGroup alignment="left">
+                <Button
+                  intent="primary"
+                  onClick={handleSubmit(handleSubmitContact(updateContact, navigate))}
+                  type="button"
+                  disabled={updateContactLoading || !isValid}
+                  loading={updateContactLoading}
+                >
+                  Update
+                </Button>
+              </ButtonGroup>
+            )}
+          </form>
+          {!contactLoading && !contact && (
+            <PersistentNotification isExpanded isFullWidth isInline intent="primary">
+              Contact not found
+            </PersistentNotification>
+          )}
+        </Tile>
+      </FlexContainer>
     </ErrorBoundary>
   )
 }

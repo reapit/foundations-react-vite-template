@@ -8,15 +8,11 @@ exports[`ContactsComsDetails should match a snapshot 1`] = `
       <div
         class="el-snack-holder"
       />
-      <div
-        class="el-mb11"
+      <p
+        class="el-has-bold-text el-has-section-margin el-body-text"
       >
-        <p
-          class="el-has-grey-text el-has-no-margin el-body-text"
-        >
-          Provide here the communication details and marketing preferences of your contact.
-        </p>
-      </div>
+        Provide here the communication details and marketing preferences of your contact.
+      </p>
       <div
         class="el-fade-in el-form-layout"
       >
@@ -27,26 +23,10 @@ exports[`ContactsComsDetails should match a snapshot 1`] = `
             class="el-input-group"
           >
             <input
-              class="el-input"
+              class="el-has-input-error el-input"
               id="test-static-id"
               placeholder="Please enter a telephone number"
             />
-            <span
-              class="el-intent-danger el-icon"
-            >
-              <svg
-                fill="none"
-                height="1em"
-                viewBox="0 0 18 20"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m17.42 14.1-7.1-4.1 7.098-4.097a.66.66 0 1 0-.66-1.144L9.66 8.858V.66a.66.66 0 0 0-1.32 0v8.197L1.241 4.759a.66.66 0 1 0-.66 1.144L7.68 10l-7.1 4.098a.66.66 0 0 0 .661 1.144l7.098-4.098v8.195a.66.66 0 0 0 1.32 0v-8.196l7.1 4.099a.657.657 0 0 0 .902-.242.66.66 0 0 0-.242-.902Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </span>
             <label
               class="el-label"
               for="test-static-id"
@@ -67,26 +47,10 @@ exports[`ContactsComsDetails should match a snapshot 1`] = `
             class="el-input-group"
           >
             <input
-              class="el-input"
+              class="el-has-input-error el-input"
               id="test-static-id"
               placeholder="Please enter a telephone number"
             />
-            <span
-              class="el-intent-danger el-icon"
-            >
-              <svg
-                fill="none"
-                height="1em"
-                viewBox="0 0 18 20"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m17.42 14.1-7.1-4.1 7.098-4.097a.66.66 0 1 0-.66-1.144L9.66 8.858V.66a.66.66 0 0 0-1.32 0v8.197L1.241 4.759a.66.66 0 1 0-.66 1.144L7.68 10l-7.1 4.098a.66.66 0 0 0 .661 1.144l7.098-4.098v8.195a.66.66 0 0 0 1.32 0v-8.196l7.1 4.099a.657.657 0 0 0 .902-.242.66.66 0 0 0-.242-.902Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </span>
             <label
               class="el-label"
               for="test-static-id"
@@ -107,26 +71,10 @@ exports[`ContactsComsDetails should match a snapshot 1`] = `
             class="el-input-group"
           >
             <input
-              class="el-input"
+              class="el-has-input-error el-input"
               id="test-static-id"
               placeholder="Please enter a telephone number"
             />
-            <span
-              class="el-intent-danger el-icon"
-            >
-              <svg
-                fill="none"
-                height="1em"
-                viewBox="0 0 18 20"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m17.42 14.1-7.1-4.1 7.098-4.097a.66.66 0 1 0-.66-1.144L9.66 8.858V.66a.66.66 0 0 0-1.32 0v8.197L1.241 4.759a.66.66 0 1 0-.66 1.144L7.68 10l-7.1 4.098a.66.66 0 0 0 .661 1.144l7.098-4.098v8.195a.66.66 0 0 0 1.32 0v-8.196l7.1 4.099a.657.657 0 0 0 .902-.242.66.66 0 0 0-.242-.902Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </span>
             <label
               class="el-label"
               for="test-static-id"
@@ -147,27 +95,11 @@ exports[`ContactsComsDetails should match a snapshot 1`] = `
             class="el-input-group"
           >
             <input
-              class="el-input"
+              class="el-has-input-error el-input"
               id="test-static-id"
               placeholder="Please enter an email address"
               type="email"
             />
-            <span
-              class="el-intent-danger el-icon"
-            >
-              <svg
-                fill="none"
-                height="1em"
-                viewBox="0 0 18 20"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m17.42 14.1-7.1-4.1 7.098-4.097a.66.66 0 1 0-.66-1.144L9.66 8.858V.66a.66.66 0 0 0-1.32 0v8.197L1.241 4.759a.66.66 0 1 0-.66 1.144L7.68 10l-7.1 4.098a.66.66 0 0 0 .661 1.144l7.098-4.098v8.195a.66.66 0 0 0 1.32 0v-8.196l7.1 4.099a.657.657 0 0 0 .902-.242.66.66 0 0 0-.242-.902Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </span>
             <label
               class="el-label"
               for="test-static-id"
@@ -362,15 +294,11 @@ exports[`ContactsComsDetails should match a snapshot 1`] = `
     <div
       class="el-snack-holder"
     />
-    <div
-      class="el-mb11"
+    <p
+      class="el-has-bold-text el-has-section-margin el-body-text"
     >
-      <p
-        class="el-has-grey-text el-has-no-margin el-body-text"
-      >
-        Provide here the communication details and marketing preferences of your contact.
-      </p>
-    </div>
+      Provide here the communication details and marketing preferences of your contact.
+    </p>
     <div
       class="el-fade-in el-form-layout"
     >
@@ -381,26 +309,10 @@ exports[`ContactsComsDetails should match a snapshot 1`] = `
           class="el-input-group"
         >
           <input
-            class="el-input"
+            class="el-has-input-error el-input"
             id="test-static-id"
             placeholder="Please enter a telephone number"
           />
-          <span
-            class="el-intent-danger el-icon"
-          >
-            <svg
-              fill="none"
-              height="1em"
-              viewBox="0 0 18 20"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m17.42 14.1-7.1-4.1 7.098-4.097a.66.66 0 1 0-.66-1.144L9.66 8.858V.66a.66.66 0 0 0-1.32 0v8.197L1.241 4.759a.66.66 0 1 0-.66 1.144L7.68 10l-7.1 4.098a.66.66 0 0 0 .661 1.144l7.098-4.098v8.195a.66.66 0 0 0 1.32 0v-8.196l7.1 4.099a.657.657 0 0 0 .902-.242.66.66 0 0 0-.242-.902Z"
-                fill="currentColor"
-              />
-            </svg>
-          </span>
           <label
             class="el-label"
             for="test-static-id"
@@ -421,26 +333,10 @@ exports[`ContactsComsDetails should match a snapshot 1`] = `
           class="el-input-group"
         >
           <input
-            class="el-input"
+            class="el-has-input-error el-input"
             id="test-static-id"
             placeholder="Please enter a telephone number"
           />
-          <span
-            class="el-intent-danger el-icon"
-          >
-            <svg
-              fill="none"
-              height="1em"
-              viewBox="0 0 18 20"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m17.42 14.1-7.1-4.1 7.098-4.097a.66.66 0 1 0-.66-1.144L9.66 8.858V.66a.66.66 0 0 0-1.32 0v8.197L1.241 4.759a.66.66 0 1 0-.66 1.144L7.68 10l-7.1 4.098a.66.66 0 0 0 .661 1.144l7.098-4.098v8.195a.66.66 0 0 0 1.32 0v-8.196l7.1 4.099a.657.657 0 0 0 .902-.242.66.66 0 0 0-.242-.902Z"
-                fill="currentColor"
-              />
-            </svg>
-          </span>
           <label
             class="el-label"
             for="test-static-id"
@@ -461,26 +357,10 @@ exports[`ContactsComsDetails should match a snapshot 1`] = `
           class="el-input-group"
         >
           <input
-            class="el-input"
+            class="el-has-input-error el-input"
             id="test-static-id"
             placeholder="Please enter a telephone number"
           />
-          <span
-            class="el-intent-danger el-icon"
-          >
-            <svg
-              fill="none"
-              height="1em"
-              viewBox="0 0 18 20"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m17.42 14.1-7.1-4.1 7.098-4.097a.66.66 0 1 0-.66-1.144L9.66 8.858V.66a.66.66 0 0 0-1.32 0v8.197L1.241 4.759a.66.66 0 1 0-.66 1.144L7.68 10l-7.1 4.098a.66.66 0 0 0 .661 1.144l7.098-4.098v8.195a.66.66 0 0 0 1.32 0v-8.196l7.1 4.099a.657.657 0 0 0 .902-.242.66.66 0 0 0-.242-.902Z"
-                fill="currentColor"
-              />
-            </svg>
-          </span>
           <label
             class="el-label"
             for="test-static-id"
@@ -501,27 +381,11 @@ exports[`ContactsComsDetails should match a snapshot 1`] = `
           class="el-input-group"
         >
           <input
-            class="el-input"
+            class="el-has-input-error el-input"
             id="test-static-id"
             placeholder="Please enter an email address"
             type="email"
           />
-          <span
-            class="el-intent-danger el-icon"
-          >
-            <svg
-              fill="none"
-              height="1em"
-              viewBox="0 0 18 20"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m17.42 14.1-7.1-4.1 7.098-4.097a.66.66 0 1 0-.66-1.144L9.66 8.858V.66a.66.66 0 0 0-1.32 0v8.197L1.241 4.759a.66.66 0 1 0-.66 1.144L7.68 10l-7.1 4.098a.66.66 0 0 0 .661 1.144l7.098-4.098v8.195a.66.66 0 0 0 1.32 0v-8.196l7.1 4.099a.657.657 0 0 0 .902-.242.66.66 0 0 0-.242-.902Z"
-                fill="currentColor"
-              />
-            </svg>
-          </span>
           <label
             class="el-label"
             for="test-static-id"

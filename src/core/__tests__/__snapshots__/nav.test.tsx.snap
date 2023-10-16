@@ -192,6 +192,11 @@ exports[`Nav should match a snapshot 1`] = `
             </span>
           </a>
         </div>
+        <a
+          class="el-nav-item"
+        >
+          New Page
+        </a>
         <div
           class="el-nav-responsive-avatar-wrap"
         >
@@ -410,6 +415,11 @@ exports[`Nav should match a snapshot 1`] = `
           </span>
         </a>
       </div>
+      <a
+        class="el-nav-item"
+      >
+        New Page
+      </a>
       <div
         class="el-nav-responsive-avatar-wrap"
       >

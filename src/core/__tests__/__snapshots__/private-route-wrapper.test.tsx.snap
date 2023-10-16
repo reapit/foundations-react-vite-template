@@ -9,7 +9,7 @@ exports[`PrivateRouteWrapper should match a snapshot 1`] = `
         class="el-snack-holder"
       />
       <main
-        class="el-main-container"
+        class="el-has-grey-background el-main-container"
       >
         <div
           class="el-nav-bg"
@@ -195,6 +195,11 @@ exports[`PrivateRouteWrapper should match a snapshot 1`] = `
               </span>
             </a>
           </div>
+          <a
+            class="el-nav-item"
+          >
+            New Page
+          </a>
           <div
             class="el-nav-responsive-avatar-wrap"
           >
@@ -232,7 +237,7 @@ exports[`PrivateRouteWrapper should match a snapshot 1`] = `
       class="el-snack-holder"
     />
     <main
-      class="el-main-container"
+      class="el-has-grey-background el-main-container"
     >
       <div
         class="el-nav-bg"
@@ -418,6 +423,11 @@ exports[`PrivateRouteWrapper should match a snapshot 1`] = `
             </span>
           </a>
         </div>
+        <a
+          class="el-nav-item"
+        >
+          New Page
+        </a>
         <div
           class="el-nav-responsive-avatar-wrap"
         >
@@ -512,7 +522,7 @@ exports[`PrivateRouteWrapper should match a snapshot where there is no session 1
         class="el-snack-holder"
       />
       <main
-        class="el-main-container"
+        class="el-has-grey-background el-main-container"
       >
         <section
           class="el-page-container"
@@ -537,7 +547,7 @@ exports[`PrivateRouteWrapper should match a snapshot where there is no session 1
       class="el-snack-holder"
     />
     <main
-      class="el-main-container"
+      class="el-has-grey-background el-main-container"
     >
       <section
         class="el-page-container"

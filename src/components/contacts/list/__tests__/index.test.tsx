@@ -1,4 +1,10 @@
-import { ContactsList, handleOpenModal, handleToggleActiveContact, handleSetContactsFilters } from '..'
+import {
+  ContactsList,
+  handleOpenModal,
+  handleToggleActiveContact,
+  handleSetContactsFilters,
+  handleOpenDrawer,
+} from '..'
 import { usePlatformGet } from '../../../../hooks'
 import { mockContactModelPagedResult, mockContactModel } from '../../../../scripts/stubs'
 import { render } from '../../../../scripts/tests'
@@ -42,6 +48,21 @@ describe('handleOpenModal', () => {
 
     expect(openModal).toHaveBeenCalledTimes(1)
     expect(setContactToToggleActive).toHaveBeenCalledWith(contact)
+  })
+})
+
+describe('handleOpenDrawer', () => {
+  it('should correctly open the modal', () => {
+    const openDrawer = jest.fn()
+    const contact = mockContactModel
+    const setContactToQuickView = jest.fn()
+
+    const curried = handleOpenDrawer(openDrawer, contact, setContactToQuickView)
+
+    curried()
+
+    expect(openDrawer).toHaveBeenCalledTimes(1)
+    expect(setContactToQuickView).toHaveBeenCalledWith(contact)
   })
 })
 

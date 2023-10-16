@@ -7,10 +7,11 @@ import {
   Select,
   FormLayout,
   elFadeIn,
-  elMb11,
+  elMb8,
   InputError,
   Button,
-  elMb7,
+  elMb5,
+  SmallText,
 } from '@reapit/elements'
 import { Dispatch, FC, SetStateAction, useState } from 'react'
 import { UseFormReturn } from 'react-hook-form'
@@ -46,14 +47,12 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
 
   return (
     <>
-      <div className={elMb11}>
-        <BodyText hasGreyText hasNoMargin>
-          Provide up to three addresses for your contact. All addresses are optional, only primary address is shown by
-          default.
-        </BodyText>
-      </div>
-      <BodyText>Primary Address</BodyText>
-      <FormLayout className={cx(elMb11, elFadeIn)}>
+      <BodyText hasBoldText hasSectionMargin>
+        Provide up to three addresses for your contact. All addresses are optional, only primary address is shown by
+        default.
+      </BodyText>
+      <SmallText hasSectionMargin>Primary Address</SmallText>
+      <FormLayout className={cx(elMb8, elFadeIn)}>
         <InputWrap>
           <InputGroup>
             <Select {...register('primaryAddress.type')} defaultValue="primary">
@@ -72,6 +71,7 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
         <InputWrap>
           <InputGroup
             {...register('primaryAddress.buildingName')}
+            hasError={Boolean(errors.primaryAddress?.buildingName?.message)}
             type="text"
             label="Building Name"
             placeholder="Name of the building"
@@ -83,6 +83,7 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
         <InputWrap>
           <InputGroup
             {...register('primaryAddress.buildingNumber')}
+            hasError={Boolean(errors.primaryAddress?.buildingNumber?.message)}
             type="text"
             label="Building Number"
             placeholder="Number of the building"
@@ -92,24 +93,49 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
           )}
         </InputWrap>
         <InputWrap>
-          <InputGroup {...register('primaryAddress.line1')} type="text" label="Line 1" placeholder="Address line 1" />
+          <InputGroup
+            {...register('primaryAddress.line1')}
+            hasError={Boolean(errors.primaryAddress?.line1?.message)}
+            type="text"
+            label="Line 1"
+            placeholder="Address line 1"
+          />
           {errors.primaryAddress?.line1?.message && <InputError message={errors.primaryAddress.line1.message} />}
         </InputWrap>
         <InputWrap>
-          <InputGroup {...register('primaryAddress.line2')} type="text" label="Line 2" placeholder="Address line 2" />
+          <InputGroup
+            {...register('primaryAddress.line2')}
+            hasError={Boolean(errors.primaryAddress?.line2?.message)}
+            type="text"
+            label="Line 2"
+            placeholder="Address line 2"
+          />
           {errors.primaryAddress?.line2?.message && <InputError message={errors.primaryAddress.line2.message} />}
         </InputWrap>
         <InputWrap>
-          <InputGroup {...register('primaryAddress.line3')} type="text" label="Line 3" placeholder="Address line 3" />
+          <InputGroup
+            {...register('primaryAddress.line3')}
+            hasError={Boolean(errors.primaryAddress?.line3?.message)}
+            type="text"
+            label="Line 3"
+            placeholder="Address line 3"
+          />
           {errors.primaryAddress?.line3?.message && <InputError message={errors.primaryAddress.line3.message} />}
         </InputWrap>
         <InputWrap>
-          <InputGroup {...register('primaryAddress.line4')} type="text" label="Line 4" placeholder="Address line 4" />
+          <InputGroup
+            {...register('primaryAddress.line4')}
+            hasError={Boolean(errors.primaryAddress?.line4?.message)}
+            type="text"
+            label="Line 4"
+            placeholder="Address line 4"
+          />
           {errors.primaryAddress?.line4?.message && <InputError message={errors.primaryAddress.line4.message} />}
         </InputWrap>
         <InputWrap>
           <InputGroup
             {...register('primaryAddress.postcode')}
+            hasError={Boolean(errors.primaryAddress?.postcode?.message)}
             type="text"
             label="Post Code"
             placeholder="Address post code"
@@ -134,8 +160,8 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
       </FormLayout>
       {hasSecondaryAddress ? (
         <>
-          <BodyText>Secondary Address</BodyText>
-          <FormLayout className={cx(elMb11, elFadeIn)}>
+          <SmallText hasSectionMargin>Secondary Address</SmallText>
+          <FormLayout className={cx(elMb8, elFadeIn)}>
             <InputWrap>
               <InputGroup>
                 <Select {...register('secondaryAddress.type')} defaultValue="secondary">
@@ -154,6 +180,7 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
             <InputWrap>
               <InputGroup
                 {...register('secondaryAddress.buildingName')}
+                hasError={Boolean(errors.secondaryAddress?.buildingName?.message)}
                 type="text"
                 label="Building Name"
                 placeholder="Name of the building"
@@ -165,6 +192,7 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
             <InputWrap>
               <InputGroup
                 {...register('secondaryAddress.buildingNumber')}
+                hasError={Boolean(errors.secondaryAddress?.buildingNumber?.message)}
                 type="text"
                 label="Building Number"
                 placeholder="Number of the building"
@@ -176,6 +204,7 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
             <InputWrap>
               <InputGroup
                 {...register('secondaryAddress.line1')}
+                hasError={Boolean(errors.secondaryAddress?.line1?.message)}
                 type="text"
                 label="Line 1"
                 placeholder="Address line 1"
@@ -187,6 +216,7 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
             <InputWrap>
               <InputGroup
                 {...register('secondaryAddress.line2')}
+                hasError={Boolean(errors.secondaryAddress?.line2?.message)}
                 type="text"
                 label="Line 2"
                 placeholder="Address line 2"
@@ -198,6 +228,7 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
             <InputWrap>
               <InputGroup
                 {...register('secondaryAddress.line3')}
+                hasError={Boolean(errors.secondaryAddress?.line3?.message)}
                 type="text"
                 label="Line 3"
                 placeholder="Address line 3"
@@ -209,6 +240,7 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
             <InputWrap>
               <InputGroup
                 {...register('secondaryAddress.line4')}
+                hasError={Boolean(errors.secondaryAddress?.line4?.message)}
                 type="text"
                 label="Line 4"
                 placeholder="Address line 4"
@@ -220,6 +252,7 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
             <InputWrap>
               <InputGroup
                 {...register('secondaryAddress.postcode')}
+                hasError={Boolean(errors.secondaryAddress?.postcode?.message)}
                 type="text"
                 label="Post Code"
                 placeholder="Address post code"
@@ -244,23 +277,23 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
               </InputGroup>
             </InputWrap>
           </FormLayout>
-          <div className={elMb7}>
-            <Button onClick={handleAddAddress(setHasSecondaryAddress, hasSecondaryAddress)} intent="low">
+          <div className={elMb5}>
+            <Button onClick={handleAddAddress(setHasSecondaryAddress, hasSecondaryAddress)} intent="default">
               Remove Secondary Address
             </Button>
           </div>
         </>
       ) : (
-        <div className={elMb7}>
-          <Button onClick={handleAddAddress(setHasSecondaryAddress, hasSecondaryAddress)} intent="low">
+        <div className={elMb5}>
+          <Button onClick={handleAddAddress(setHasSecondaryAddress, hasSecondaryAddress)} intent="default">
             Add Secondary Address
           </Button>
         </div>
       )}
       {hasWorkAddress ? (
         <>
-          <BodyText>Work Address</BodyText>
-          <FormLayout className={cx(elMb11, elFadeIn)}>
+          <SmallText hasSectionMargin>Work Address</SmallText>
+          <FormLayout className={cx(elMb8, elFadeIn)}>
             <InputWrap>
               <InputGroup>
                 <Select {...register('workAddress.type')} defaultValue="work">
@@ -279,6 +312,7 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
             <InputWrap>
               <InputGroup
                 {...register('workAddress.buildingName')}
+                hasError={Boolean(errors.workAddress?.buildingName?.message)}
                 type="text"
                 label="Building Name"
                 placeholder="Name of the building"
@@ -290,6 +324,7 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
             <InputWrap>
               <InputGroup
                 {...register('workAddress.buildingNumber')}
+                hasError={Boolean(errors.workAddress?.buildingNumber?.message)}
                 type="text"
                 label="Building Number"
                 placeholder="Number of the building"
@@ -299,24 +334,49 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
               )}
             </InputWrap>
             <InputWrap>
-              <InputGroup {...register('workAddress.line1')} type="text" label="Line 1" placeholder="Address line 1" />
+              <InputGroup
+                {...register('workAddress.line1')}
+                hasError={Boolean(errors.workAddress?.line1?.message)}
+                type="text"
+                label="Line 1"
+                placeholder="Address line 1"
+              />
               {errors.workAddress?.line1?.message && <InputError message={errors.workAddress.line1.message} />}
             </InputWrap>
             <InputWrap>
-              <InputGroup {...register('workAddress.line2')} type="text" label="Line 2" placeholder="Address line 2" />
+              <InputGroup
+                {...register('workAddress.line2')}
+                hasError={Boolean(errors.workAddress?.line2?.message)}
+                type="text"
+                label="Line 2"
+                placeholder="Address line 2"
+              />
               {errors.workAddress?.line2?.message && <InputError message={errors.workAddress.line2.message} />}
             </InputWrap>
             <InputWrap>
-              <InputGroup {...register('workAddress.line3')} type="text" label="Line 3" placeholder="Address line 3" />
+              <InputGroup
+                {...register('workAddress.line3')}
+                hasError={Boolean(errors.workAddress?.line3?.message)}
+                type="text"
+                label="Line 3"
+                placeholder="Address line 3"
+              />
               {errors.workAddress?.line3?.message && <InputError message={errors.workAddress.line3.message} />}
             </InputWrap>
             <InputWrap>
-              <InputGroup {...register('workAddress.line4')} type="text" label="Line 4" placeholder="Address line 4" />
+              <InputGroup
+                {...register('workAddress.line4')}
+                hasError={Boolean(errors.workAddress?.line4?.message)}
+                type="text"
+                label="Line 4"
+                placeholder="Address line 4"
+              />
               {errors.workAddress?.line4?.message && <InputError message={errors.workAddress.line4.message} />}
             </InputWrap>
             <InputWrap>
               <InputGroup
                 {...register('workAddress.postcode')}
+                hasError={Boolean(errors.workAddress?.postcode?.message)}
                 type="text"
                 label="Post Code"
                 placeholder="Address post code"
@@ -339,15 +399,15 @@ export const ContactsAddresses: FC<ContactsAddressesProps> = ({ form }) => {
               </InputGroup>
             </InputWrap>
           </FormLayout>
-          <div className={elMb7}>
-            <Button onClick={handleAddAddress(setHasWorkAddress, hasWorkAddress)} intent="low">
+          <div className={elMb5}>
+            <Button onClick={handleAddAddress(setHasWorkAddress, hasWorkAddress)} intent="default">
               Remove Work Address
             </Button>
           </div>
         </>
       ) : (
-        <div className={elMb7}>
-          <Button onClick={handleAddAddress(setHasWorkAddress, hasWorkAddress)} intent="low">
+        <div className={elMb5}>
+          <Button onClick={handleAddAddress(setHasWorkAddress, hasWorkAddress)} intent="default">
             Add Work Address
           </Button>
         </div>

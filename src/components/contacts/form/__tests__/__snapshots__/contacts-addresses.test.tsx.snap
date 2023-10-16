@@ -8,22 +8,18 @@ exports[`ContactsAddresses should match a snapshot 1`] = `
       <div
         class="el-snack-holder"
       />
-      <div
-        class="el-mb11"
-      >
-        <p
-          class="el-has-grey-text el-has-no-margin el-body-text"
-        >
-          Provide up to three addresses for your contact. All addresses are optional, only primary address is shown by default.
-        </p>
-      </div>
       <p
-        class="el-body-text"
+        class="el-has-bold-text el-has-section-margin el-body-text"
+      >
+        Provide up to three addresses for your contact. All addresses are optional, only primary address is shown by default.
+      </p>
+      <p
+        class="el-has-section-margin el-small-text"
       >
         Primary Address
       </p>
       <div
-        class="el-mb11 el-fade-in el-form-layout"
+        class="el-mb8 el-fade-in el-form-layout"
       >
         <div
           class="el-input-wrap"
@@ -1493,7 +1489,7 @@ exports[`ContactsAddresses should match a snapshot 1`] = `
         </div>
       </div>
       <div
-        class="el-mb7"
+        class="el-mb5"
       >
         <button
           class="el-intent-neutral el-button"
@@ -1505,7 +1501,7 @@ exports[`ContactsAddresses should match a snapshot 1`] = `
         </button>
       </div>
       <div
-        class="el-mb7"
+        class="el-mb5"
       >
         <button
           class="el-intent-neutral el-button"
@@ -1522,22 +1518,18 @@ exports[`ContactsAddresses should match a snapshot 1`] = `
     <div
       class="el-snack-holder"
     />
-    <div
-      class="el-mb11"
-    >
-      <p
-        class="el-has-grey-text el-has-no-margin el-body-text"
-      >
-        Provide up to three addresses for your contact. All addresses are optional, only primary address is shown by default.
-      </p>
-    </div>
     <p
-      class="el-body-text"
+      class="el-has-bold-text el-has-section-margin el-body-text"
+    >
+      Provide up to three addresses for your contact. All addresses are optional, only primary address is shown by default.
+    </p>
+    <p
+      class="el-has-section-margin el-small-text"
     >
       Primary Address
     </p>
     <div
-      class="el-mb11 el-fade-in el-form-layout"
+      class="el-mb8 el-fade-in el-form-layout"
     >
       <div
         class="el-input-wrap"
@@ -3007,7 +2999,7 @@ exports[`ContactsAddresses should match a snapshot 1`] = `
       </div>
     </div>
     <div
-      class="el-mb7"
+      class="el-mb5"
     >
       <button
         class="el-intent-neutral el-button"
@@ -3019,7 +3011,7 @@ exports[`ContactsAddresses should match a snapshot 1`] = `
       </button>
     </div>
     <div
-      class="el-mb7"
+      class="el-mb5"
     >
       <button
         class="el-intent-neutral el-button"
@@ -3093,22 +3085,18 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
       <div
         class="el-snack-holder"
       />
-      <div
-        class="el-mb11"
-      >
-        <p
-          class="el-has-grey-text el-has-no-margin el-body-text"
-        >
-          Provide up to three addresses for your contact. All addresses are optional, only primary address is shown by default.
-        </p>
-      </div>
       <p
-        class="el-body-text"
+        class="el-has-bold-text el-has-section-margin el-body-text"
+      >
+        Provide up to three addresses for your contact. All addresses are optional, only primary address is shown by default.
+      </p>
+      <p
+        class="el-has-section-margin el-small-text"
       >
         Primary Address
       </p>
       <div
-        class="el-mb11 el-fade-in el-form-layout"
+        class="el-mb8 el-fade-in el-form-layout"
       >
         <div
           class="el-input-wrap"
@@ -3175,7 +3163,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
             class="el-input-group"
           >
             <input
-              class="el-input"
+              class="el-has-input-error el-input"
               id="test-static-id"
               placeholder="Name of the building"
               type="text"
@@ -3200,7 +3188,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
             class="el-input-group"
           >
             <input
-              class="el-input"
+              class="el-has-input-error el-input"
               id="test-static-id"
               placeholder="Number of the building"
               type="text"
@@ -3225,7 +3213,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
             class="el-input-group"
           >
             <input
-              class="el-input"
+              class="el-has-input-error el-input"
               id="test-static-id"
               placeholder="Address line 1"
               type="text"
@@ -3250,7 +3238,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
             class="el-input-group"
           >
             <input
-              class="el-input"
+              class="el-has-input-error el-input"
               id="test-static-id"
               placeholder="Address line 2"
               type="text"
@@ -3275,7 +3263,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
             class="el-input-group"
           >
             <input
-              class="el-input"
+              class="el-has-input-error el-input"
               id="test-static-id"
               placeholder="Address line 3"
               type="text"
@@ -3300,7 +3288,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
             class="el-input-group"
           >
             <input
-              class="el-input"
+              class="el-has-input-error el-input"
               id="test-static-id"
               placeholder="Address line 4"
               type="text"
@@ -3325,7 +3313,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
             class="el-input-group"
           >
             <input
-              class="el-input"
+              class="el-has-input-error el-input"
               id="test-static-id"
               placeholder="Address post code"
               type="text"
@@ -4613,7 +4601,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
         </div>
       </div>
       <div
-        class="el-mb7"
+        class="el-mb5"
       >
         <button
           class="el-intent-neutral el-button"
@@ -4625,7 +4613,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
         </button>
       </div>
       <div
-        class="el-mb7"
+        class="el-mb5"
       >
         <button
           class="el-intent-neutral el-button"
@@ -4642,22 +4630,18 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
     <div
       class="el-snack-holder"
     />
-    <div
-      class="el-mb11"
-    >
-      <p
-        class="el-has-grey-text el-has-no-margin el-body-text"
-      >
-        Provide up to three addresses for your contact. All addresses are optional, only primary address is shown by default.
-      </p>
-    </div>
     <p
-      class="el-body-text"
+      class="el-has-bold-text el-has-section-margin el-body-text"
+    >
+      Provide up to three addresses for your contact. All addresses are optional, only primary address is shown by default.
+    </p>
+    <p
+      class="el-has-section-margin el-small-text"
     >
       Primary Address
     </p>
     <div
-      class="el-mb11 el-fade-in el-form-layout"
+      class="el-mb8 el-fade-in el-form-layout"
     >
       <div
         class="el-input-wrap"
@@ -4724,7 +4708,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
           class="el-input-group"
         >
           <input
-            class="el-input"
+            class="el-has-input-error el-input"
             id="test-static-id"
             placeholder="Name of the building"
             type="text"
@@ -4749,7 +4733,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
           class="el-input-group"
         >
           <input
-            class="el-input"
+            class="el-has-input-error el-input"
             id="test-static-id"
             placeholder="Number of the building"
             type="text"
@@ -4774,7 +4758,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
           class="el-input-group"
         >
           <input
-            class="el-input"
+            class="el-has-input-error el-input"
             id="test-static-id"
             placeholder="Address line 1"
             type="text"
@@ -4799,7 +4783,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
           class="el-input-group"
         >
           <input
-            class="el-input"
+            class="el-has-input-error el-input"
             id="test-static-id"
             placeholder="Address line 2"
             type="text"
@@ -4824,7 +4808,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
           class="el-input-group"
         >
           <input
-            class="el-input"
+            class="el-has-input-error el-input"
             id="test-static-id"
             placeholder="Address line 3"
             type="text"
@@ -4849,7 +4833,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
           class="el-input-group"
         >
           <input
-            class="el-input"
+            class="el-has-input-error el-input"
             id="test-static-id"
             placeholder="Address line 4"
             type="text"
@@ -4874,7 +4858,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
           class="el-input-group"
         >
           <input
-            class="el-input"
+            class="el-has-input-error el-input"
             id="test-static-id"
             placeholder="Address post code"
             type="text"
@@ -6162,7 +6146,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
       </div>
     </div>
     <div
-      class="el-mb7"
+      class="el-mb5"
     >
       <button
         class="el-intent-neutral el-button"
@@ -6174,7 +6158,7 @@ exports[`ContactsAddresses should match a snapshot with work and secondary addre
       </button>
     </div>
     <div
-      class="el-mb7"
+      class="el-mb5"
     >
       <button
         class="el-intent-neutral el-button"

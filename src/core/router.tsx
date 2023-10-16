@@ -4,6 +4,7 @@ import { Routes as RoutePaths } from '../constants/routes'
 import PrivateRouteWrapper from './private-route-wrapper'
 import { LoginModule } from '../components/login'
 import { ContactsModule } from '../components/contacts'
+import { NewModule } from '../components/new'
 
 export const RoutesComponent: FC = () => (
   <>
@@ -14,6 +15,14 @@ export const RoutesComponent: FC = () => (
         element={
           <PrivateRouteWrapper>
             <ContactsModule />
+          </PrivateRouteWrapper>
+        }
+      />
+      <Route
+        path={RoutePaths.NEW}
+        element={
+          <PrivateRouteWrapper>
+            <NewModule />
           </PrivateRouteWrapper>
         }
       />

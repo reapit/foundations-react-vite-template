@@ -107,6 +107,8 @@ export const handleResetForm = (contact: ContactModel | null, reset: UseFormRese
       santisedContact?.primaryAddress,
     )
 
+    console.log(santisedContact)
+
     reset({
       ...santisedContact,
       primaryAddress,

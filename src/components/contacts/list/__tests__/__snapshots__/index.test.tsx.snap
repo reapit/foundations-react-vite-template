@@ -1457,10 +1457,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
                 >
                   <span
                     class="el-intent-default el-icon-new el-icon"
+                    style="font-size: 1.25rem;"
                   >
                     <svg
                       fill="none"
                       height="1em"
+                      style="font-size: 1.25rem;"
                       viewBox="0 0 24 24"
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1483,10 +1485,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
                 >
                   <span
                     class="el-intent-default el-icon-new el-icon"
+                    style="font-size: 1.25rem;"
                   >
                     <svg
                       fill="none"
                       height="1em"
+                      style="font-size: 1.25rem;"
                       viewBox="0 0 24 24"
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1509,10 +1513,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
                 >
                   <span
                     class="el-intent-default el-icon-new el-icon"
+                    style="font-size: 1.25rem;"
                   >
                     <svg
                       fill="none"
                       height="1em"
+                      style="font-size: 1.25rem;"
                       viewBox="0 0 24 24"
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1535,10 +1541,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
                 >
                   <span
                     class="el-intent-default el-icon-new el-icon"
+                    style="font-size: 1.25rem;"
                   >
                     <svg
                       fill="none"
                       height="1em"
+                      style="font-size: 1.25rem;"
                       viewBox="0 0 24 24"
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1651,10 +1659,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
                 >
                   <span
                     class="el-intent-default el-icon-new el-icon"
+                    style="font-size: 1.25rem;"
                   >
                     <svg
                       fill="none"
                       height="1em"
+                      style="font-size: 1.25rem;"
                       viewBox="0 0 24 24"
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1677,10 +1687,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
                 >
                   <span
                     class="el-intent-default el-icon-new el-icon"
+                    style="font-size: 1.25rem;"
                   >
                     <svg
                       fill="none"
                       height="1em"
+                      style="font-size: 1.25rem;"
                       viewBox="0 0 24 24"
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1703,10 +1715,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
                 >
                   <span
                     class="el-intent-default el-icon-new el-icon"
+                    style="font-size: 1.25rem;"
                   >
                     <svg
                       fill="none"
                       height="1em"
+                      style="font-size: 1.25rem;"
                       viewBox="0 0 24 24"
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1729,10 +1743,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
                 >
                   <span
                     class="el-intent-default el-icon-new el-icon"
+                    style="font-size: 1.25rem;"
                   >
                     <svg
                       fill="none"
                       height="1em"
+                      style="font-size: 1.25rem;"
                       viewBox="0 0 24 24"
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2214,10 +2230,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
               >
                 <span
                   class="el-intent-default el-icon-new el-icon"
+                  style="font-size: 1.25rem;"
                 >
                   <svg
                     fill="none"
                     height="1em"
+                    style="font-size: 1.25rem;"
                     viewBox="0 0 24 24"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2240,10 +2258,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
               >
                 <span
                   class="el-intent-default el-icon-new el-icon"
+                  style="font-size: 1.25rem;"
                 >
                   <svg
                     fill="none"
                     height="1em"
+                    style="font-size: 1.25rem;"
                     viewBox="0 0 24 24"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2266,10 +2286,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
               >
                 <span
                   class="el-intent-default el-icon-new el-icon"
+                  style="font-size: 1.25rem;"
                 >
                   <svg
                     fill="none"
                     height="1em"
+                    style="font-size: 1.25rem;"
                     viewBox="0 0 24 24"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2292,10 +2314,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
               >
                 <span
                   class="el-intent-default el-icon-new el-icon"
+                  style="font-size: 1.25rem;"
                 >
                   <svg
                     fill="none"
                     height="1em"
+                    style="font-size: 1.25rem;"
                     viewBox="0 0 24 24"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2408,10 +2432,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
               >
                 <span
                   class="el-intent-default el-icon-new el-icon"
+                  style="font-size: 1.25rem;"
                 >
                   <svg
                     fill="none"
                     height="1em"
+                    style="font-size: 1.25rem;"
                     viewBox="0 0 24 24"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2434,10 +2460,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
               >
                 <span
                   class="el-intent-default el-icon-new el-icon"
+                  style="font-size: 1.25rem;"
                 >
                   <svg
                     fill="none"
                     height="1em"
+                    style="font-size: 1.25rem;"
                     viewBox="0 0 24 24"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2460,10 +2488,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
               >
                 <span
                   class="el-intent-default el-icon-new el-icon"
+                  style="font-size: 1.25rem;"
                 >
                   <svg
                     fill="none"
                     height="1em"
+                    style="font-size: 1.25rem;"
                     viewBox="0 0 24 24"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2486,10 +2516,12 @@ exports[`ContactsList should match a snapshot with data 1`] = `
               >
                 <span
                   class="el-intent-default el-icon-new el-icon"
+                  style="font-size: 1.25rem;"
                 >
                   <svg
                     fill="none"
                     height="1em"
+                    style="font-size: 1.25rem;"
                     viewBox="0 0 24 24"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"

@@ -4,13 +4,13 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "react-jsx",
-    "lib": ["dom", "dom.iterable", "es2015", "es2017", "es2018", "es2019", "es2020", "es5", "es6", "es7", "esnext"], // Do we need these many versions, esnext already inludes latest available features.
+    "lib": ["dom", "dom.iterable", "es2015", "es2017", "es2018", "es2019", "es2020", "es5", "es6", "es7", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
-    "noEmit": false, // Vite doesn't use TS to emit .js files.
+    "noEmit": false,
     "noImplicitAny": false,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "dist", // consider removing this as vite does not use outDir unless we use tsc manually.
+    "outDir": "dist",
     "strict": true,
     "target": "esnext",
     "sourceMap": true,

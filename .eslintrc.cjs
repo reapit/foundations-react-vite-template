@@ -4,7 +4,7 @@ module.exports = {
     es6: true,
     node: true,
     amd: true,
-    jest: true,
+    // jest: true,
   },
   extends: [
     'eslint:recommended',
@@ -28,7 +28,7 @@ module.exports = {
   ignorePatterns: [
     'node_modules/',
     'setup-tests.ts',
-    'jest.config.js',
+    // 'jest.config.js',
     '.prettierrc.js',
     'react-app-scaffolder/',
     'marketplace-api-schema.ts',

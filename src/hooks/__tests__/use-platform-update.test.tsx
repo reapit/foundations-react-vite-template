@@ -21,10 +21,10 @@ vi.mock('@reapit/elements', () => ({
 
 vi.mock('../../core/connect-session')
 
-const mockData = {
+type MockData = {
   someData: {
-    someKey: 'someValue',
-  },
+    someKey: 'someValue'
+  }
 }
 
 const mockSuccess = vi.fn()
@@ -50,9 +50,9 @@ describe('usePlatformUpdate', () => {
       test: true,
     }
 
-    const { result } = renderHook<{}, ReapitUpdateState<{}, typeof mockData>>(
+    const { result } = renderHook<{}, ReapitUpdateState<{}, MockData>>(
       () =>
-        usePlatformUpdate<{}, typeof mockData>({
+        usePlatformUpdate<{}, MockData>({
           path: '/foo/bar',
           headers: {
             foo: 'bar',
@@ -110,9 +110,9 @@ describe('usePlatformUpdate', () => {
       data: { updated: true },
     })
 
-    const { result } = renderHook<{}, ReapitUpdateState<{}, typeof mockData>>(
+    const { result } = renderHook<{}, ReapitUpdateState<{}, MockData>>(
       () =>
-        usePlatformUpdate<{}, typeof mockData>({
+        usePlatformUpdate<{}, MockData>({
           path: '/foo/bar',
           headers: {
             foo: 'bar',
@@ -181,9 +181,9 @@ describe('usePlatformUpdate', () => {
       test: true,
     }
 
-    const { result } = renderHook<{}, ReapitUpdateState<{}, typeof mockData>>(
+    const { result } = renderHook<{}, ReapitUpdateState<{}, MockData>>(
       () =>
-        usePlatformUpdate<{}, typeof mockData>({
+        usePlatformUpdate<{}, MockData>({
           path: '/foo/bar',
           headers: {
             foo: 'bar',

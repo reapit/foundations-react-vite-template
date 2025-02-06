@@ -15,7 +15,7 @@
     "start": "vite",
     "build": "tsc && vite build",
     "test": "vitest --watch --coverage=false",
-    "test:ci": "vitest --silent --ci --passWithNoTests",
+    "test:run": "vitest --silent --run --passWithNoTests",
     "lint": "eslint --cache --ext=ts,tsx,js src",
     "check": "tsc --noEmit --skipLibCheck",
     "upgrade:deps": "yarn upgrade-interactive"
